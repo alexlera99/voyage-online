@@ -3,6 +3,7 @@
 html,body{
     font-family: 'Numans', sans-serif;
     text-align: center;
+    height: 100%;
 }
 
 @media screen and (min-device-width: 800px){

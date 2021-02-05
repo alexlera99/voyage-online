@@ -11,10 +11,10 @@ window.addEventListener('load', ()=>{
         user.Username = myform["username"].value
         user.Password = myform["password"].value
         let data = JSON.stringify(user)
-        axios.post('http://localhost:8080/login', data)
+        axios.post('http://localhost:4443/login', data)
             .then(function (response) {
                 if (response.data == "Login") {
-                    window.location.replace("/voyageonline/index2.html");
+                    window.location.replace("/home.html");
                 }
                 else {
                     alert("Wrong credentials")

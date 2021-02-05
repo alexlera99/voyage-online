@@ -1,15 +1,14 @@
 $(window).on('load', () => {
-    axios.get('http://localhost:8080/images')
+    axios.get('http://localhost:4443/images')
         .then(function (response) {
             var i, j, k
-            console.log(response.data[0])
             for (i = 0; i < response.data.length; i += 2){
                 $('#containeraux').append(
                     `<div id="row${i}" class="row"></div>`
                 )
                 for (j = 0, k = i; j < 2 && k < response.data.length; j++, k++) {
                     $("#row" + `${i}`).append(
-                        `<div id="col${k}" class="col">
+                        `<div id="col${k}" class="col-md-6 col-xs-11">
                             <div class="card" style="width: auto;">
                                 <img class="card-img-top" src=${response.data[k].Image} alt="Card image cap">
                                 <div class="card-body">
@@ -25,10 +24,6 @@ $(window).on('load', () => {
                 }
             }
             if ( response.data.length % 2 != 0){
-                console.log("hola")
-                console.log(i)
-                console.log(j)
-                console.log(k)
                 $("#row" + `${i-2}`).append(
                     `<div id="col${k}" class="col">
                             <div class="card" style="width: auto;">

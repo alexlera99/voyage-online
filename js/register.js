@@ -12,10 +12,10 @@ window.addEventListener('load', ()=> {
         user.Password = myform["password"].value
         let data = JSON.stringify(user)
         console.log(data)
-        axios.post('http://localhost:8080/register', data)
+        axios.post('http://localhost:4443/register', data)
             .then(function (response) {
                 if (response.data == "Register") {
-                    window.location.replace("/voyageonline/login.html");
+                    window.location.replace("/index.html");
                     alert("User registered successfully")
                 }
                 else {
