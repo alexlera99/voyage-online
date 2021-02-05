@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voyage home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="text-align: center; margin-bottom: 0px">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Voyage online</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item nav-item2">
+                            <a class="navbar-light navicon" href="index.html"><i class="fas fa-hotel"><br><p class="navicon">Home</p></i></a>
+                        </li>
+                        <li class="nav-item nav-item2">
+                            <a class="navbar-light navicon" href="index.html"><i class="far fa-heart"><br><p class="navicon">Favorites</p></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <i class="fas fa-user-circle"><br><p id ="name-profile" class="navicon"></p></i>
+                            </a>
+                            <ul id="profile-menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">My profile</a></li>
+                                <li><a class="dropdown-item" href="#">My orders</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images4.bovpg.net/st/back/es/natural/778862ef271531942ba7b2480089c1835990fc72.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images2.bovpg.net/vpi/fr/front/uploaded/hub/seo/headerHub.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images4.bovpg.net/st/back/es/natural/44839c068276695a1f43a797ec66b081bb34c6c8.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filters
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                    <li><span style="font-weight: bold"> Destination city</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="Madrid" id="defaultCheck1"><span class="filter-text">Barcelona</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="Barcelona"><span class="filter-text">Madrid</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="Barcelona"><span class="filter-text">Sevilla</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="Valencia"><span class="filter-text">Valencia</span></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><span style="font-weight: bold"> Duration</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="Weekend" id="defaultCheck2"><span class="filter-text">Weekend</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="1 day"><span class="filter-text">1 day</span></li>
+                    <li><input class="form-check-input" type="checkbox" value="1 week"><span class="filter-text">1 week</span></li>
+                    <li><input class="form-check-input" type="checkbox" value=" > 2 weeks"><span class="filter-text"> > 2 weeks </span></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><span style="font-weight: bold"> Price</span></li>
+                    <li><input type="range" class="form-control-range" id="formControlRange" min="1" max="999" onInput="$('#rangeval').html($(this).val())" style="padding-right: 2px">
+                        <span id="rangeval">500<!-- Default value --></span></li>
+                </ul>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://images2.bovpg.net/wsdv/media/1/1/5/7/2/157261.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">TENERIFE / COSTA ADEJE</h5>
+                            <p class="card-text">Escápate a Costa Adeje, un lugar idílico en la costa sur de Tenerife donde el descanso y la diversión están asegurados</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Desde 122€ / pers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://images2.bovpg.net/wsdv/media/1/1/7/4/4/174443.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">ISLANDIA / REYKJAVIK</h5>
+                            <p class="card-text">Disfruta del máximo confort urbano en un acogedor hotel 4* que se inauguró en junio de 2020 en el centro de Reykjavik.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Desde 177€ / pers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://images2.bovpg.net/wsdv/media/1/1/2/3/7/123728.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">ANDORRA / EL SERRAT</h5>
+                            <p class="card-text">Desconecta de la rutina en un entorno encantador entre montañas y aprovecha para practicar esquí en las estaciones del Principado</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Desde 103€ / pers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://images2.bovpg.net/wsdv/media/1/1/1/2/7/112777.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">CAMBOYA / SIEM REAP</h5>
+                            <p class="card-text">Aprovecha la oportunidad de conocer un magnífico lugar: los templos de Angkor, únicos en el mundo</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Desde 242€ / pers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://images2.bovpg.net/wsdv/media/1/1/5/9/4/159407.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">ESTADOS UNIDOS / NUEVA YORK</h5>
+                            <p class="card-text">Vive el vibrante espíritu de Nueva York y visita sus lugares más conocidos gracias a la excelente ubicación del hotel</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Desde 486€ / pers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://images3.bovpg.net/wsdv/media/1/7/1/2/8/71289.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">MALDIVAS / RAA ATOLL</h5>
+                            <p class="card-text">Prepara las maletas en un hotel de 5* en las Maldivas, donde el lujo convive con un entorno natural y tropical único</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Desde 1759€ / pers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-center text-lg-start">
+        <div class="text-center p1">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook" style="font-size: 48px; padding: 5px;"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" style="font-size: 48px; padding: 5px;"></i></a>
+            <a href="https://gmail.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-google" style="font-size: 48px; padding: 5px;"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" style="font-size: 48px; padding: 5px;"></i></a>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <p class="text-light"> © 2021 Copyright: <a class="text-light" href="https://github.com/alexlera99" target="_blank" rel="noopener noreferrer">voyage-online.com</a></p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/9c8a05914f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
